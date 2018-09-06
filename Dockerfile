@@ -8,11 +8,10 @@ ENV WALLET_CONF /etc/smartcash/smartcash.conf
 ENV WALLET_DATA /data/
 
 RUN apt-get update && \
-    apt-get install -y software-properties-common python-software-properties && \
+    apt-get install -y software-properties-common && \
     add-apt-repository ppa:smartcash/ppa && \
     apt-get update && \
-    apt-get install -y smartcashd=$smartcashVersion && \
-    apt-get purge -y software-properties-common
+    apt-get install -y smartcashd=$smartcashVersion
 
 COPY /docker-entrypoint.sh $_entryPointBin
 

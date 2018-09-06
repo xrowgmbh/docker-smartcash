@@ -12,7 +12,7 @@ RUN apt-get update && \
     add-apt-repository ppa:smartcash/ppa && \
     apt-get update && \
     apt-get install -y smartcashd=$smartcashVersion && \
-    apt-get purge -y python-software-properties
+    apt-get purge -y software-properties-common
 
 COPY /docker-entrypoint.sh $_entryPointBin
 

@@ -1,6 +1,6 @@
 FROM ubuntu:bionic
 
-ARG smartcashVersion=1.2.5r1-0bionic1
+ARG smartcashVersion=1.2.6r1-0bionic1
 ARG _smartcashBin=/opt/smartcash/smartcashd
 ARG _entryPointBin=/opt/docker-entrypoint.sh
 
